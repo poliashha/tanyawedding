@@ -1,0 +1,748 @@
+body {
+  background-color: var(--bg-color);
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 412px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.convert {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  z-index: 3;
+}
+
+.title {
+  font-family: var(--main-font);
+  font-size: 17px;
+  line-height: 136%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.small-text {
+  font-size: 32px;
+}
+
+.audio {
+  width: 42px;
+  height: 42px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.audio.fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  animation: fix 0.5s ease forwards;
+}
+
+@keyframes fix {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.href {
+  text-decoration: none;
+}
+
+.box-priglos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.kursiv-text {
+  font-family: var(--kursiv-text);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 83%;
+  color: var(--kursiv-color);
+}
+.main {
+  margin: auto;
+  max-width: 412px;
+  text-align: center;
+  background-color: var(--bg-color);
+  font-family: var(--main-font);
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.black-kursiv {
+  color: var(--color-text);
+  margin: 0 -30px;
+}
+
+.privet {
+  padding: 0 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.adress-text {
+  padding-top: 2px;
+}
+
+.date-text {
+  padding-top: 20px;
+}
+
+.place-wrrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 412px;
+}
+
+.place {
+  margin: auto;
+}
+
+.cermotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  padding: 0 37px;
+}
+
+.map-button {
+  padding: 5px 43px;
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.box-programma {
+  position: relative;
+}
+
+.box-programma::after {
+  content: url("../img/plan.svg");
+  position: absolute;
+  bottom: -19px;
+  right: 55px;
+}
+
+.raspisanie {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.programma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+.conteiner_text {
+  border: 1px solid rgba(0, 0, 0, 0.48);
+  padding: 15px 16px;
+  border-radius: 37px;
+  text-transform: uppercase;
+}
+
+.dresscode {
+  margin-top: -60px;
+}
+
+.data-text {
+  font-size: 24px;
+}
+
+.paragraf {
+  padding-bottom: 20px;
+}
+
+.dress-kod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-dress {
+  background-image: url(../img/dress.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 115px;
+}
+
+.circle {
+  margin-top: 24px;
+}
+
+.dress-text {
+  padding: 0 37px;
+}
+
+.conteiner-drss {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wishes {
+  padding: 0 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: -48px;
+  padding: 0 30px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: auto;
+  transition: height 0.3s ease;
+  padding: 0 20px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-circle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.input {
+  border: 1px solid #000;
+  max-width: 330px;
+  width: 100%;
+  height: 33px;
+  margin-top: 9px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.custom-radio:hover .radio-circle {
+  border-color: var(--color-text);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: var(--color-text);
+  background: var(--color-text);
+}
+
+.radio-text {
+  text-align: left;
+  font-size: 18px;
+  font-family: var(--main-font);
+
+  font-weight: 400;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.checkbox__input {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  outline: none;
+  border-radius: 0;
+}
+
+.checkbox__input:checked::after {
+  content: "✓";
+  font-size: 12px;
+}
+
+.button {
+  max-width: 330px;
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 7px 7px;
+  justify-self: center;
+  align-self: center;
+  font-family: var(--main-font);
+}
+
+.button.touch-pressed {
+  background-color: #6b6b6b;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--background-color-light);
+    color: var(--hot-pink-color);
+  }
+}
+
+.form-send {
+  text-align: center;
+}
+
+.error-text {
+  display: none;
+}
+
+.error-text.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+.radio-error {
+  display: none;
+  text-align: left;
+  font-size: 15px;
+}
+
+.radio-error.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.varints-text {
+  padding-bottom: 5px;
+}
+
+.varints {
+  padding-bottom: 13px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.custom-radio {
+  font-size: 20px;
+  text-align: left;
+}
+
+.checkbox {
+  font-size: 20px;
+}
+
+.error-icon {
+  font-size: 16px;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: var(--main-font);
+}
+
+.image-anketa {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+}
+
+.anketa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.time {
+  background-image: url(../img/tim.jpg);
+  max-width: 412px;
+  width: 100%;
+  max-height: 514px;
+  aspect-ratio: 412 / 514;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  margin-top: -48px;
+}
+
+.text-input {
+  font-size: 18px;
+}
+
+.time {
+  background-image: url(../img/tim.jpg);
+  max-width: 412px;
+  width: 100%;
+  max-height: 522px;
+  aspect-ratio: 412 / 522;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  margin-top: -48px;
+}
+
+.text-input {
+  font-size: 18px;
+}
+
+.timer-text {
+  font-size: clamp(3.4375rem, calc(-0.4573rem + 17.31vw), 4rem);
+  text-align: center;
+  font-family: var(--timer-font);
+  position: relative;
+  width: 57px;
+}
+
+.colon {
+  width: 12px;
+}
+
+.timer {
+  padding-top: 127px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-text_small {
+  font-size: 15px;
+}
+.days::after {
+  content: "дней";
+  position: absolute;
+  top: 75px;
+  right: 8px;
+  font-size: 15px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.hours::after {
+  content: "часов";
+  position: absolute;
+  top: 75px;
+  right: 5px;
+  font-size: 15px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.minutes::after {
+  content: "минут";
+  position: absolute;
+  top: 75px;
+  right: 3px;
+  font-size: 15px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.seconds::after {
+  content: "секунд";
+  position: absolute;
+  top: 75px;
+  left: 4px;
+  font-size: 15px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.contakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 0 35px;
+}
+
+.ico {
+  border: none;
+  background: transparent;
+}
+
+.box-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tetx-timer {
+  color: var(--color-text);
+  font-family: "Buongiorno Rastellino Cyr";
+  font-size: 78px;
+  transform: rotate(-6deg);
+}
+
+.big-text {
+  font-size: 22px;
+}
+
+.img-footer {
+  padding-top: 20px;
+}
+
+.messenger object {
+  pointer-events: none;
+}
+
+.tel {
+  text-decoration: none;
+}
+
+.but-box {
+  width: 42px;
+  height: 57px;
+}
+
+.site-content {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.8s ease-out,
+    visibility 0.8s ease-out;
+}
+
+/* Когда конверт скрыт - показываем сайт */
+body.show-site .site-content {
+  opacity: 1;
+  visibility: visible;
+}
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Белый фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1),
+    visibility 0.7s ease-out;
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(0px);
+}
+
+/* Скрытый класс для заставки */
+.fullscreen-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Контейнер для конверта внутри заставки */
+.envelope-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+/* Стили для SVG (ваш convert.svg) */
+.envelope-svg {
+  width: 1000%;
+  max-width: 412px;
+  height: 305px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.12));
+  transition: transform 0.25s ease;
+}
+
+/* Эффект лёгкого увеличения при наведении/нажатии */
+.fullscreen-overlay:hover .envelope-svg {
+  transform: scale(1.02);
+}
+
+/* Текст-подсказка под конвертом */
+.click-tip {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: #545454;
+
+  font-weight: 400;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+body.show-site .site-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes gentleRise {
+  0% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body.show-site .site-content {
+  animation: gentleRise 0.6s ease-out;
+}
+
+/* Убираем скролл пока открыт конверт (для красоты) */
+body.overlay-active {
+  overflow: hidden;
+}
+
+/* Когда конверт исчез, возвращаем скролл */
+body.show-site {
+  overflow: auto;
+}
+
+@media (width<412px) {
+  .bucet-foto {
+    max-width: 412px;
+    width: 100%;
+    aspect-ratio: 412 / 515;
+  }
+
+  .image-anketa {
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 412 / 83;
+  }
+
+  .fotoanna {
+    aspect-ratio: 412 / 514;
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+  }
+
+  .hotel {
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 412 / 483;
+  }
+
+  .line {
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 412 / 229;
+  }
+
+  .anket {
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 412 / 548;
+  }
+
+  .img-footer {
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 412 / 442;
+  }
+}
