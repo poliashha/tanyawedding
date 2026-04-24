@@ -595,7 +595,7 @@ body {
 }
 
 .site-content {
-  opacity: 0;
+  opacity: 2;
   visibility: hidden;
   transition:
     opacity 0.8s ease-out,
@@ -624,6 +624,7 @@ body.show-site .site-content {
   opacity: 1;
   visibility: visible;
   backdrop-filter: blur(0px);
+  background-color: rgba(244, 236, 216, 0.4);
 }
 
 
@@ -643,7 +644,7 @@ body.show-site .site-content {
 
 
 .envelope-svg {
-  
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.12));
   transition: transform 0.25s ease;
 }
 
@@ -657,7 +658,6 @@ body.show-site .site-content {
   font-size: 16px;
   color: #545454;
   font-weight: 400;
-  backdrop-filter: blur(4px);
   pointer-events: none;
   white-space: nowrap;
 }
