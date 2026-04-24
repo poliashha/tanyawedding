@@ -644,7 +644,6 @@ body.show-site .site-content {
 
 
 .envelope-svg {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.12));
   transition: transform 0.25s ease;
 }
 
