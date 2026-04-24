@@ -643,10 +643,7 @@ body.show-site .site-content {
 
 
 .envelope-svg {
-  width: 100%;
-  max-width: 383px;
-  max-height: 270px;
-  height: 100%;
+  
   transition: transform 0.25s ease;
 }
 
