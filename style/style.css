@@ -626,13 +626,12 @@ body.show-site .site-content {
   backdrop-filter: blur(0px);
 }
 
-/* Скрытый класс для заставки */
+
 .fullscreen-overlay.hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-/* Контейнер для конверта внутри заставки */
 .envelope-center {
   display: flex;
   flex-direction: column;
@@ -640,24 +639,22 @@ body.show-site .site-content {
   justify-content: center;
   transform: scale(1);
   transition: transform 0.3s ease;
-  padding: 0 10px;
 }
 
-/* Стили для SVG (ваш convert.svg) */
+
 .envelope-svg {
-  width: 1000%;
+  width: 100%;
   max-width: 383px;
   max-height: 270px;
   height: 100%;
   transition: transform 0.25s ease;
 }
 
-/* Эффект лёгкого увеличения при наведении/нажатии */
+
 .fullscreen-overlay:hover .envelope-svg {
   transform: scale(1.02);
 }
 
-/* Текст-подсказка под конвертом */
 .click-tip {
   font-family: var(--main-font);
   font-size: 16px;
@@ -686,12 +683,10 @@ body.show-site .site-content {
   animation: gentleRise 0.6s ease-out;
 }
 
-/* Убираем скролл пока открыт конверт (для красоты) */
 body.overlay-active {
   overflow: hidden;
 }
 
-/* Когда конверт исчез, возвращаем скролл */
 body.show-site {
   overflow: auto;
 }
